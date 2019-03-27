@@ -12,16 +12,35 @@ import { HomeComponent } from "./home/home.component";
 import { ErrorInterceptorProvider } from "./_services/error.interceptor";
 import { AlertifyService } from "./_services/alertify.service";
 import { from } from "rxjs";
+import { ListsComponent } from './lists/lists.component';
+import { MemberListComponent } from './member-list/member-list.component';
+import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, RegisterComponent, HomeComponent],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    FormsModule,
-    BsDropdownModule.forRoot()
-  ],
-  providers: [AuthService, ErrorInterceptorProvider, AlertifyService],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+      NavComponent,
+      RegisterComponent,
+      HomeComponent,
+      ListsComponent,
+      MemberListComponent,
+      MessagesComponent
+   ],
+   imports: [
+      BrowserModule,
+      HttpClientModule,
+      FormsModule,
+      BsDropdownModule.forRoot(),
+      AppRoutingModule
+   ],
+   providers: [
+      AuthService,
+      ErrorInterceptorProvider,
+      AlertifyService
+   ],
+   bootstrap: [
+      AppComponent
+   ]
 })
 export class AppModule {}
