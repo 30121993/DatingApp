@@ -22,7 +22,7 @@ namespace DatingApp.Migrations
                     Created = table.Column<DateTime>(nullable: false),
                     LastActive = table.Column<DateTime>(nullable: false),
                     Introduction = table.Column<string>(nullable: true),
-                    LockingFor = table.Column<string>(nullable: true),
+                    LookingFor = table.Column<string>(nullable: true),
                     Interests = table.Column<string>(nullable: true),
                     City = table.Column<string>(nullable: true),
                     Country = table.Column<string>(nullable: true)
